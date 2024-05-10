@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Videos</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'img/multimedia.png' %}">
+    <link rel="stylesheet" href="{% static 'css/videplayer.css' %}">
+   
+      
+</head>
+<body>
+    <div class="header"></div>
+    <section>
+    <video id="first" width="700" controls poster="{% static 'img/introtemp.png' %}">
+        <source src="{% static 'videos/gainintro.mp4'%}" type="video/mp4">
+          
+          
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+       
+      </video>
+      <div class="descripton">
+        <img src="{% static 'img/introd.svg'%}">
+    </div>
+    </section>
+    <section>
+        <video  width="700" controls poster="{% static 'img/biceptemp.png' %}">
+            <source src="{% static 'videos/bicep.mp4' %}" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+            Your browser does not support HTML video.
+           
+          </video>
+          <div class="descripton">
+           <img src="{% static 'img/day1.svg'%}">
+        </div>
+        </section>
+        <section>
+            <video  width="700" controls poster="{% static 'img/shouldertemp.png' %}">
+                <source src="{%static 'videos/shoulderworkout.mp4' %}" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+               
+              </video>
+              <div class="descripton">
+                <img src="{% static 'img/shoulderd.svg' %}">
+            </div>
+            </section>
+            <section>
+                <video  width="700" controls poster="{% static 'img/Abstemplate.png' %}">
+                    <source src="{% static 'videos/abs workout.mp4' %}" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                   
+                  </video>
+                  <div class="descripton">
+                    <img src="{% static 'img/chestd.svg' %}">
+                </div>
+                </section>
+                <section>
+                    <video  width="700" controls poster="{% static 'img/legtemp.png' %}">
+                        <source src="{% static 'videos/leg.mp4' %}" type="video/mp4">
+                        <source src="mov_bbb.ogg" type="video/ogg">
+                        Your browser does not support HTML video.
+                       
+                      </video>
+                      <div class="descripton">
+                        <img src="{% static 'img/legd.svg' %}">
+                    </div>
+                    </section>
+                    <section>
+                        <video  width="700" controls poster="{% static 'img/triceptemp.png' %}">
+                            <source src="{% static 'videos/tricepworkout.mp4' %}" type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                           
+                          </video>
+                          <div class="descripton">
+                            <img src="{% static 'img/Tricepd.svg' %}">
+                        </div>
+                        </section>
+                        <section>
+                            <video  width="700" controls poster="{% static 'img/backtemp.png' %}">
+                                <source src="{%  static 'videos/backworkout.mp4' %}" type="video/mp4">
+                                <source src="mov_bbb.ogg" type="video/ogg">
+                                Your browser does not support HTML video.
+                               
+                              </video>
+                              <div class="descripton">
+                                <img src="{% static 'img/backy.svg' %}">
+                            </div>
+                            </section>
+                            <section>
+                                <video  width="700" controls poster="{% static 'img/chesttemp.png'%}">
+                                    <source src="{% static 'videos/chest.mp4' %}" type="video/mp4">
+                                    <source src="mov_bbb.ogg" type="video/ogg">
+                                    Your browser does not support HTML video.
+                                   
+                                  </video>
+                                  <div class="descripton">
+                                    <img src="{% static 'img/absdd.svg' %}">
+                                </div>
+                                </section>
+          
+      
+      
+</body>
+</html>

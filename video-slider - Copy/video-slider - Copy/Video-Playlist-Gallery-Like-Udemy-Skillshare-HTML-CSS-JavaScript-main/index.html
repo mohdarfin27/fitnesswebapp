@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Slider</title>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .slider{
+    display: flex;
+    justify-content: space-around;
+  }
+.playlist{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+    margin-top: 30px;
+
+}
+.slide{
+    margin-top: 30px;
+}
+ .playlist>div{
+    margin: 5px;
+    background-color: brown;
+ }
+ .pt{
+    display: flex;
+ }
+ 
+</style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slide">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qi_DONt5Isc" frameborder="0" allowfullscreen></iframe>
+  </div>
+ 
+  <!-- Add more slides with additional YouTube video embeds -->
+
+
+
+<div class="playlist">
+    <div>1</div>
+    <div class="pt"><p>21</p><p>22</p><p>23</p></div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlide(slideIndex);
+
+  function moveSlide(n) {
+    showSlide(slideIndex += n);
+  }
+
+  function showSlide(n) {
+    let i;
+    const slides = document.getElementsByClassName("slide");
+    if (n > slides.length) {
+      slideIndex = 1;
+    }
+    if (n < 1) {
+      slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+  }
+</script>
+
+</body>
+</html>

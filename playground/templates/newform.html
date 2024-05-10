@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI-CALC</title>
+  <link rel="icon" type="image/x-icon" href="fitness.png">
+  <link rel="stylesheet" href="{% static '/css/styled.css'%}">
+
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="header">
+        <h2 class="animation a1">BMR CALCULATOR</h2>
+        <h4 class="animation a2">Fitness is not a destination it's a journey</h4>
+      </div>
+      <form id="bmrform">
+      <div class="form">
+        <input type="tel" class="form-field animation a3" placeholder="Weight(kg)" id="weight">
+        <input type="tel" class="form-field animation a4" placeholder="Height(cm)" id="height">
+        <input type="tel" class="form-field animation a4" placeholder="Age" id="age">
+        <input type="text" class="form-field animation a4" placeholder="Gender" id="gender">
+       <!-- <p class="animation a5"><a href="#">Forgot Password</a></p> -->
+      
+        <button class="animation a6" type="submit">CALCULATE BMR</button>
+        <button class="animation a6" onClick="window.location.reload();">RESET ALL DATA</button>
+        
+      </div>
+    </form>
+    <p id="result"></p>
+    </div>
+    <div class="right"></div>
+  </div>
+  <script>
+    document.getElementById('bmrform').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        var weight = document.getElementById('weight').value;
+        var height = document.getElementById('height').value;
+        var age = document.getElementById('age').value;
+        var gender = document.getElementById('gender').value;
+
+        var bmr;
+        if (gender === 'male') {
+            bmr = 66 + (13.75 * weight) + (5 * height) - (6.75 * age);
+        } else {
+            bmr = 655 + (9.56 * weight) + (1.85 * height) - (4.68 * age);
+        }
+
+        document.getElementById('result').innerHTML = 'Your BMR is ' + bmr.toFixed(2) + ' calories/day.';
+    });
+</script>
+</body>
+</html>
+
+

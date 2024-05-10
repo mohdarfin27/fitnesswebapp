@@ -1,0 +1,102 @@
+<!-- 
+🎬 Video playlist UI Design like Skillshare With Vanilla JavaScript
+👨🏻‍⚕️ By: Coding Design
+
+You can do whatever you want with the code. However if you love my content, you can subscribed my YouTube Channel
+🌎link: www.youtube.com/codingdesign
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Playlist UI Design Like Udemy | SkillShare</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/css/videoplayerstyle.css'%}">
+</head>
+
+<body>
+    <main class="container">
+        <section class="main-video">
+            <video  src="{% static '/videos/chest.mp4'%}" controls autoplay="false"></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+        <section class="main-video">
+            <video  src="{% static '/videos/Temple.mp4'%}" controls autoplay="false"></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+        <section class="main-video">
+            <video  src="{% static '/videos/bicep.mp4'%}" controls autoplay="false"></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+
+        <section class="main-video">
+            <video  src="{% static '/videos/abs.mp4'%}" controls autoplay="false"></video>
+            <h3 class="title">Title of the playing Video.</h3>
+        </section>
+
+
+
+       <!-- <section class="video-playlist">
+            <h3 class="title">Workout Video</h3>
+            <p>10 lessions &nbsp; . &nbsp; 50m 48s</p>
+            <div class="videos">
+                <div class="video active">
+                    <img   src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">endomorph intro</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">Chest Worout</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">Abs Workout</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">Leg Workout</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">Biceps Workout</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">shoulder workout</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}" alt="">
+                    <p>01.</p>
+                    <h3 class="title">Tricep video</h3>
+                    <p class="time">3.46</p>
+                </div>
+                <div class="video active">
+                    <img src="{% static '/img/play.svg'%}"alt="">
+                    <p>01.</p>
+                    <h3 class="title">backworkout</h3>
+                    <p class="time">3.46</p>
+                </div> -->
+
+            </div>
+        </section>
+    </main>
+    <script src="{% static '/js/videoplayerscript.js'%}"></script>
+</body>
+
+</html>
